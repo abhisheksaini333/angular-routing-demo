@@ -1,0 +1,14 @@
+<h3 class="my-2">Loans page</h3>
+<br/>
+
+<ul>
+    <li>
+       <a routerLink="./download">Download Loan Statement</a>
+    </li>
+    <li>
+        <!-- http://localhost:4200/loans/offers?category=Loans -->
+        <a routerLink="./offers" [queryParams]="{ category: 'Loans' }">Loan Offers</a>
+    </li>
+</ul>
+<!-- To display the child route components -->
+<router-outlet></router-outlet>

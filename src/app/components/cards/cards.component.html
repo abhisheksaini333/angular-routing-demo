@@ -1,0 +1,13 @@
+<h3 class="my-2">Cards page</h3>
+<br/>
+
+<ul>
+    <li>
+       <a routerLink="./download">Download Card Statement</a>
+    </li>
+    <li>
+        <a routerLink="./offers" [queryParams]="{ category: 'Cards' }">Card Offers</a>
+    </li>
+</ul>
+<!-- To display the child route components -->
+<router-outlet></router-outlet>

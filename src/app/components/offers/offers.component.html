@@ -1,0 +1,28 @@
+<h3 class="my-2">Offers page</h3>
+<h6> Showing offers for : {{ category }}</h6>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                Type
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                Discount
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let offer of listOfOffers">
+            <td>{{ offer.type }}</td>
+            <td>{{ offer.gender }}</td>
+            <td>{{ offer.category }}</td>
+            <td>{{ offer.discount }}</td>
+        </tr>
+    </tbody>
+</table>
